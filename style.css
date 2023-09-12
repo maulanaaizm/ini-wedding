@@ -1,14 +1,11 @@
 :root {
   --pink: #ff8dc7;
-  --lightpink: #ffacc7;
+  --lightpink: rgb(255, 172, 199);
   --bg: #ffddd2;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 * {
   box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -52,11 +49,11 @@ body {
 }
 
 .home h4 {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 .home p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .home a {
@@ -71,14 +68,15 @@ body {
 
 /* navbar */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: rgb(255 172 199 / 0.5);
   backdrop-filter: blur(4px);
   display: none;
 }
 
 .navbar li a {
   color: #3f3f3f;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -109,7 +107,7 @@ body {
 
 .mempelai .couple h3 {
   font-family: "Sacramento", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--pink);
   font-weight: bold;
   padding-top: 20px;
@@ -132,14 +130,17 @@ body {
 /* Tanggal */
 .tanggal {
   background-color: var(--bg);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
+.mempelai h2,
 .tanggal h2,
+.galeri h2,
 .gift h2,
-.ucapan h2 {
-  font-size: 5rem;
+.ucapan h2,
+.salam h2 {
+  font-size: 4rem;
   font-family: "Sacramento", cursive;
   font-weight: bold;
   color: var(--pink);
@@ -167,6 +168,18 @@ body {
   color: #fff;
 }
 
+/* Galeri */
+.galeri {
+  background-color: var(--bg);
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 8rem;
+}
+
+.galeri p {
+  font-weight: 300;
+}
+/* Gift */
 .gift {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -193,35 +206,65 @@ body {
 }
 .salam {
   background-color: var(--bg);
-  padding-bottom: 3rem;
+  margin-top: -5px;
+  padding-bottom: 4rem;
 }
 
+/* Footer */
 footer {
   background-color: var(--bg);
-  padding-bottom: 1rem;
-}
-
-footer i {
-  color: red;
+  margin-bottom: 3rem;
 }
 
 footer a {
   color: var(--pink);
   text-decoration: none;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 footer a:hover {
   color: #3f3f3f;
   text-decoration: underline;
 }
+
+/* Music */
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 6.4rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--pink);
+  opacity: 0.8;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  background-color: #3f3f3f;
+  border-radius: 50%;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 65%;
   }
 
-  .navbar {
-    display: block;
+  .navbar li a {
+    font-size: 2.6rem;
   }
 
   .mempelai .couple img {
@@ -265,6 +308,11 @@ footer a:hover {
 
   .simply-countdown > .simply-section .simply-word {
     margin-top: -5px;
+  }
+
+  .mempelai h2,
+  .salam h2 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 375px) {

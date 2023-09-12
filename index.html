@@ -29,15 +29,15 @@
   <body>
     <section id="home" class="home w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-        <!-- <h4>Kepada<span> Bapak/Ibu/Saudara/i, </span></h4> -->
+        <!-- <h4 class="mb-3">Kepada<span> Bapak/Ibu/Saudara/i, </span></h4> -->
         <h4 class="mb-3">Undangan Pernikahan</h4>
         <h1>
-          LanaBae Lana <br />
+          LanaBae <br />
           & <br />
-          LanaBae Lana
+          LanaBae
         </h1>
         <p>Rabu, 15 Maret 2023</p>
-        <a href="#mempelai" class="btn btn-md shadow rounded-pill mt-2">Lihat Undangan</a>
+        <a href="#mempelai" class="btn btn-md shadow rounded-pill mt-2" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -64,6 +64,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="#gift" class="nav-link">
+            <i class="bi bi-gift-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="#ucapan" class="nav-link">
             <i class="bi bi-chat-dots-fill"></i>
           </a>
@@ -73,11 +78,9 @@
 
     <section class="mempelai" id="mempelai">
       <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <h2>Assalamualaikum Warahmatullahi Wabarakatuh</h2>
-            <p>Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
-          </div>
+        <div class="row">
+          <h2 class="py-4 px-2">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+          <p class="pb-3 px-3">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
         </div>
 
         <div class="row couple overflow-x-hidden">
@@ -175,13 +178,32 @@
       </div>
     </section>
 
-    <!-- <section style="background-color: #999 !important; margin-top: -5px; margin-bottom: -5px" id="galeri">
-      <div class="container pb-2 pt-4">
-        <div class="p-3">
-          <h1 class="text-center py-3">Galeri</h1>
+    <section class="galeri" id="galeri">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <h2>Galeri Foto</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nisi cupiditate illo fuga non eligendi!</p>
+        </div>
+
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="assets/img/gallery/full/gambar1.png">
+              <img src="assets/img/gallery/nail/gambar3.jpg" alt="gambar1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="assets/img/gallery/full/gambar2.jpg">
+              <img src="assets/img/gallery/nail/gambar3.jpg" alt="gambar2" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="assets/img/gallery/full/gambar3.jpg">
+              <img src="assets/img/gallery/nail/gambar3.jpg" alt="gambar3" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
         </div>
       </div>
-    </section>-->
+    </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -206,7 +228,7 @@
           </div>
 
           <div class="col-md-5 col-10 body border-2 rounded-4 shadow mb-5" data-aos="fade-down" data-aos-duration="1500">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/270px-BANK_BRI_logo.svg.png" class="pt-3 pb-3" alt="bri" />
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/200px-BNI_logo.svg.png" class="pt-3 pb-3" alt="bni" />
             <p>No. Rekening 123456789 <br />a.n Lorem ipsum dolor</p>
           </div>
         </div>
@@ -263,17 +285,38 @@
     <section class="salam">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="text-center">
             <p data-aos="fade-down" data-aos-duration="1500">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
-            <h2>Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+            <h2 data-aos="fade-up" data-aos-duration="2000">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="text-center">
-      <p>&copy;Copyright 2023. Build with <i class="bi bi-heart-fill"></i> <a href="">maulanaaizm</a>.</p>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2023. All Rights Reversed.</small>
+            <small class="block">Design by <a href="" target="_blank">maulanaaizm</a>.</small>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Music -->
+    <div class="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="assets/music/sound.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- My JS -->
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
