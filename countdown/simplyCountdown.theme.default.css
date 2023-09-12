@@ -1,0 +1,29 @@
+.simply-countdown {
+  overflow: hidden;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: space-around;
+}
+.simply-countdown > .simply-section {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px auto;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+.simply-countdown > .simply-section .simply-word {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  margin-top: -8px;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.8rem;
+}
