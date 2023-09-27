@@ -213,7 +213,7 @@ body {
 /* Footer */
 footer {
   background-color: var(--bg);
-  margin-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 
 footer a {
@@ -234,8 +234,8 @@ footer a:hover {
   height: 4rem;
   font-size: 2.5rem;
   position: fixed;
-  bottom: 6.4rem;
-  right: 0.5rem;
+  bottom: 5rem;
+  right: 1rem;
   cursor: pointer;
   color: var(--pink);
   opacity: 0.8;
@@ -273,8 +273,13 @@ footer a:hover {
   }
 
   footer {
-    padding-bottom: 4rem;
+    padding-bottom: 7.5rem;
     font-style: 1rem;
+  }
+
+  .audio-icon-wrapper {
+    bottom: 7rem;
+    right: 1.3rem;
   }
 }
 
