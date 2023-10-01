@@ -29,7 +29,7 @@ body {
   background-image: url(assets/img/bg.jpg);
   background-position: center;
   background-size: cover;
-  filter: grayscale(0.6);
+  filter: grayscale(0.7);
   z-index: -10;
 }
 
@@ -53,18 +53,35 @@ body {
   color: var(--pink);
 }
 
+.hero p {
+  color: var(--pink);
+  font-size: 1.5rem;
+  text-shadow: var(--shadow);
+}
+
+.hero .simply-countdown {
+  margin: auto;
+  width: 70%;
+  display: flex;
+}
+
+.hero .simply-countdown > .simply-section {
+  padding: 65px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
 .hero .btn {
   color: #fff;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  border: 1px solid var(--pink);
+  background-color: var(--pink);
   transition: 0.3s ease-in-out;
 }
 
 .hero .btn:hover {
-  color: #000;
-  border: 1px solid transparent;
-  transform: scale(1.05);
+  background-color: transparent;
+  transform: scale(1.03);
 }
 
 /* home */
@@ -94,8 +111,7 @@ body {
 }
 
 .home h1,
-.home h4,
-.home p {
+.home h4 {
   color: var(--pink);
   text-shadow: 0 2px 2px rgb(0 0 0 / 0.3);
 }
@@ -117,11 +133,13 @@ body {
 }
 
 .home p {
+  color: var(--pink);
   font-size: 1.4rem;
 }
 
 .home a {
   color: var(--pink);
+  border: 1px solid var(--pink);
   background-color: #fff;
 }
 
@@ -135,7 +153,6 @@ body {
   /* background-color: rgba(255, 255, 255, 0.3); */
   background-color: rgb(255 172 199 / 0.5);
   backdrop-filter: blur(4px);
-  display: none;
 }
 
 .navbar li a {
@@ -154,6 +171,10 @@ body {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: var(--bg);
+}
+
+.mempelai img {
+  border: 3px solid var(--pink);
 }
 
 .mempelai h3 {
@@ -222,6 +243,7 @@ body {
 }
 
 .tanggal .btn {
+  border: 1px solid var(--pink);
   color: var(--pink);
   background-color: #fff;
   transition: all 0.3s ease-in-out;
@@ -261,6 +283,7 @@ body {
 .ucapan .form-control {
   color: #3f3f3f;
 }
+
 .ucapan .btn {
   background-color: var(--pink);
   color: #fff;
@@ -306,7 +329,7 @@ footer a:hover {
   opacity: 0.8;
   animation: rotating 4s linear infinite;
   transform-origin: center;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   line-height: 0;
@@ -317,7 +340,7 @@ footer a:hover {
 .mousey {
   padding: 0.25rem 0.625rem;
   height: 2rem;
-  border: 0.1rem solid #000;
+  border: 2px solid var(--pink);
   border-radius: 1.4rem;
   opacity: 0.75;
   box-sizing: content-box;
@@ -359,9 +382,32 @@ footer a:hover {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 80%;
+  }
+
+  .hero .simply-countdown {
+    width: 80%;
+  }
+
+  .hero .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 65%;
+  }
+
+  .hero .simply-countdown {
+    width: 80%;
+  }
+
+  .hero .simply-countdown > .simply-section {
+    padding: 50px;
   }
 
   .navbar li a {
@@ -389,6 +435,14 @@ footer a:hover {
     font-size: 60%;
   }
 
+  /* .hero .simply-countdown {
+    width: 80%;
+  } */
+
+  .hero .simply-countdown > .simply-section {
+    padding: 40px;
+  }
+
   .simply-countdown > .simply-section {
     margin: 5px auto;
   }
@@ -406,6 +460,10 @@ footer a:hover {
   .mempelai .couple img {
     width: 190px;
     height: 190px;
+  }
+
+  .hero .simply-countdown > .simply-section {
+    padding: 35px;
   }
 
   .simply-countdown > .simply-section {
@@ -431,6 +489,12 @@ footer a:hover {
     height: 180px;
   }
 
+  .hero .simply-countdown {
+    width: 90%;
+  }
+  .hero .simply-countdown > .simply-section {
+    padding: 33px;
+  }
   .simply-countdown > .simply-section {
     margin: 0;
   }
@@ -449,6 +513,12 @@ footer a:hover {
     height: 180px;
   }
 
+  .hero .simply-countdown {
+    width: 95%;
+  }
+  .hero .simply-countdown > .simply-section {
+    padding: 30px;
+  }
   .simply-countdown > .simply-section {
     margin: 0;
   }
@@ -456,4 +526,11 @@ footer a:hover {
   .simply-countdown > .simply-section .simply-word {
     margin-top: -2px;
   }
+}
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }

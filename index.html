@@ -43,11 +43,11 @@
             </div>
           </div>
 
-          <p class="m-0">Scroll Dowm</p>
+          <p class="m-0">Scroll Down</p>
         </div>
       </section>
 
-      <nav class="navbar navbar-expand fixed-bottom rounded-top-4">
+      <nav class="navbar navbar-expand fixed-bottom rounded-top-4 hidden">
         <ul class="navbar-nav w-100 justify-content-around">
           <li class="nav-item">
             <a href="#home" class="nav-link">
@@ -87,13 +87,13 @@
           <div class="row couple overflow-x-hidden">
             <div class="col-lg-6 mb-5" data-aos="fade-right" data-aos-duration="2000">
               <img src="assets/img/foto.jpg" class="img-responsive rounded-circle" alt="ini gambar" />
-              <h3>Lorem ipsum dolor</h3>
+              <h3>Lanabae</h3>
               <p>Putra <br />Bapak Lorem & Ibu Ipsum</p>
             </div>
 
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
               <img src="assets/img/foto.jpg" class="img-responsive rounded-circle" alt="ini gambar" />
-              <h3>Lorem dolor ipsum</h3>
+              <h3>Lanabae</h3>
               <p>Putra <br />Bapak Lorem & Ibu Ipsum</p>
             </div>
           </div>
@@ -274,7 +274,7 @@
             <div class="col-10">
               <div class="mb-3">
                 <label for="status" class="form-label">Kehadiran</label>
-                <select name="status" id="status" class="form-select">
+                <select name="status" id="status" class="form-control">
                   <option selected>Konfirmasi Kehadiran</option>
                   <option value="1">Hadir</option>
                   <option value="0">Berhalangan</option>
@@ -331,17 +331,17 @@
         <source src="assets/music/sound.mp3" type="audio/mp3" />
       </audio>
 
-      <div class="audio-icon-wrapper" style="display: none">
+      <div class="audio-icon-wrapper hidden">
         <i class="bi bi-disc"></i>
       </div>
     </div>
 
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center justify-content-center align-items-center text-white">
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center justify-content-center align-items-center">
       <div class="container">
         <h4 class="mb-5">The Wedding Of</h4>
-
         <h1>Lana & Lana</h1>
-
+        <p>Akan melangsungkan pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
         <button id="buka" class="btn shadow rounded-4 mt-4"><i class="bi bi-envelope-open me-2"></i> Buka Undangan</button>
       </div>
     </section>
@@ -355,9 +355,9 @@
 
     <!-- Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <!-- <script>
       AOS.init();
-    </script>
+    </script> -->
 
     <script>
       simplyCountdown(".simply-countdown", {

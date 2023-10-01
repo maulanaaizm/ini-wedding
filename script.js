@@ -3,7 +3,6 @@ const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
 const song = document.querySelector("#song");
 const audioIcon = document.querySelector(".audio-icon-wrapper i");
 
-const navbar = document.querySelector(".navbar");
 let isPlaying = false;
 
 // function disableScroll() {
@@ -28,7 +27,7 @@ let isPlaying = false;
 
 function playAudio() {
   // song.volume = 0.1;
-  audioIconWrapper.style.display = "flex";
+  // audioIconWrapper.style.display = "flex";
   song.play();
   isPlaying = true;
 }
@@ -56,6 +55,25 @@ const buka = document.querySelector("#buka");
 buka.addEventListener("click", function () {
   main.style.display = "block";
   hero.style.display = "none";
-  navbar.style.display = "block";
+
+  AOS.init();
   playAudio();
 });
+
+window.onscroll = function () {
+  const home = document.querySelector("#home");
+  const navbar = document.querySelector(".navbar");
+  const fixedNav = home.offsetTop;
+
+  if (window.pageYOffset > fixedNav) {
+    navbar.classList.remove("hidden");
+    navbar.classList.add("flex");
+    audioIconWrapper.classList.remove("hidden");
+    audioIconWrapper.classList.add("flex");
+  } else {
+    navbar.classList.remove("flex");
+    navbar.classList.add("hidden");
+    audioIconWrapper.classList.remove("flex");
+    audioIconWrapper.classList.add("hidden");
+  }
+};
