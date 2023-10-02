@@ -59,14 +59,8 @@ body {
   text-shadow: var(--shadow);
 }
 
-.hero .simply-countdown {
-  margin: auto;
-  width: 70%;
-  display: flex;
-}
-
 .hero .simply-countdown > .simply-section {
-  padding: 65px;
+  padding: 70px;
   border-radius: 50%;
   background-color: var(--pink);
   color: #fff;
@@ -388,22 +382,18 @@ footer a:hover {
     font-size: 80%;
   }
 
-  .hero .simply-countdown {
+  /* .hero .simply-countdown {
     width: 80%;
   }
 
   .hero .simply-countdown > .simply-section {
     padding: 60px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 65%;
-  }
-
-  .hero .simply-countdown {
-    width: 80%;
   }
 
   .hero .simply-countdown > .simply-section {
@@ -435,20 +425,25 @@ footer a:hover {
     font-size: 60%;
   }
 
-  /* .hero .simply-countdown {
-    width: 80%;
-  } */
-
   .hero .simply-countdown > .simply-section {
     padding: 40px;
   }
-
   .simply-countdown > .simply-section {
     margin: 5px auto;
   }
 
   .simply-countdown > .simply-section .simply-word {
     margin-top: -7px;
+  }
+}
+
+@media (max-width: 475px) {
+  html {
+    font-size: 58%;
+  }
+
+  .hero .simply-countdown > .simply-section {
+    padding: 38px;
   }
 }
 
@@ -489,11 +484,8 @@ footer a:hover {
     height: 180px;
   }
 
-  .hero .simply-countdown {
-    width: 90%;
-  }
   .hero .simply-countdown > .simply-section {
-    padding: 33px;
+    padding: 30px;
   }
   .simply-countdown > .simply-section {
     margin: 0;
@@ -513,12 +505,10 @@ footer a:hover {
     height: 180px;
   }
 
-  .hero .simply-countdown {
-    width: 95%;
-  }
   .hero .simply-countdown > .simply-section {
-    padding: 30px;
+    padding: 28px;
   }
+
   .simply-countdown > .simply-section {
     margin: 0;
   }
